@@ -24,6 +24,7 @@
     }
     .img{
       width: 400px;
+      animation: blurIn 1.5s;
       @include mq{
         width: 100%;
         padding: 8vw 0 0 0 ;

@@ -100,6 +100,10 @@ Copyright (c) 2015 Daniel Eden
 	0%{opacity: 0;}
 	100%{opacity: 1;}
 }
+@keyframes blurIn{
+	0%{opacity: 1;filter: blur(20px)}
+	100%{opacity: 1;filter: blur(0px)}
+}
 @keyframes fadeInUp{
 	0%{opacity: 0; top: 20px}
 	100%{opacity: 1; top: 0;}
