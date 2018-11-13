@@ -1,0 +1,64 @@
+.sec5{
+  text-align: center;
+  .title1{
+    color: #999999;
+  }
+  .mapbox{
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    @include mq{
+      display: block;
+    }
+    .map{
+      width: 68%;
+      @include mq{
+        width: 100%;
+      }
+      iframe{
+        width: 100%;
+      }
+    }
+    .txt{
+      width: 30%;
+      text-align: left;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      @include mq{
+        width: 90%;
+        margin: 0 auto;
+      }
+      h3{
+        font-size: 1.8rem;
+        font-weight: 500;
+        border-top: 1px solid #000;
+        padding: 20px 0 10px 0;
+        @include mq{
+          &:first-of-type{
+            border: 0px;
+          }
+        }
+      }
+      p{
+        padding-bottom: 20px;
+      }
+      dl{
+        border-bottom: 1px solid #000;
+        padding-bottom: 20px;
+        @include mq{
+          border-bottom: 0px;
+          padding-bottom: 0px;
+        }
+      }
+      dt{
+        font-weight: 600;
+        padding-bottom: 5px;
+      }
+      dd{
+        padding-bottom: 15px;
+      }
+    }
+  }
+}

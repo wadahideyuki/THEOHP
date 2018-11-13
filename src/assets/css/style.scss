@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
+@import "init/reset";//リセット
+
+//プラグイン
+@import "plugin/animate";
+
+.wrap{
+  width: 100%;
+  margin: 0 auto;
+  @include mq{
+    overflow: hidden;
+  }
+}
+.sp{
+  display: none;
+  @include mq{
+    display: inline;
+  }
+}
+.pc{
+  display: inline;
+  @include mq{
+    display: none;
+  }
+}
+.title1{
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  padding: 1.5em 0 1.2em 0;
+  line-height: 1;
+  position: relative;
+  color: #FFF;
+  opacity: 0;
+  top: 30px;
+  transition: .5s;
+  transition-delay: .1s;
+  &.t2{
+    transition-delay: .5s;
+  }
+  @include mq{
+    font-size: 2.5rem;
+    padding: 4rem 0;
+  }
+}
+section{
+  padding: 0 0 80px 0;
+  &.is-show{
+    .title1{
+      opacity: 1;
+      top: 0;
+    }
+  }
+  @include mq{
+    padding: 0 0 10vw 0;
+  }
+}
+//コンテンツ毎
+@import "header";
+@import "footer";
+@import "main";
+@import "sec1";
+@import "sec2";
+@import "sec3";
+@import "sec4";
+@import "sec5";
+@import "sec6";
+@import "privacy";
+
+

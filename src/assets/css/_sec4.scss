@@ -1,0 +1,48 @@
+.sec4{
+  background: #999999;
+  text-align: center;
+  dl{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    color: #FFF;
+    font-size:1.4rem;
+    line-height: 1.6;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #FFF;
+    @include mq{
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+    }
+    dt{
+      padding: 10px 0;
+      width: 20%;
+      font-weight: bold;
+      border-bottom: 1px solid #FFF;
+      @include mq{
+        width: 100%;
+        border: 0px;
+        padding: 3vw 0 0 0;
+      }
+    }
+    dd{
+      padding: 10px 0;
+      width: 80%;
+      border-bottom: 1px solid #FFF;
+      a{
+        color: #FFF;
+      }
+      @include mq{
+        width: 100%;
+        padding: 0 0 3vw 0;
+      }
+      span{
+        display: inline-block;
+        width: 130px;
+      }
+    }
+  }
+}

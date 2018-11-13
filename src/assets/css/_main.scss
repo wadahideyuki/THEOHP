@@ -1,0 +1,110 @@
+.main{
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 130px 0 100px;
+  box-sizing: border-box;
+  transition: .3s;
+  animation: fadeIn 1s;
+  @include mq{
+    padding: 20vw 5vw 5vw 5vw;
+  }
+  .inner{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    @include mq{
+      display: block;
+    }
+    .txt{
+      width:460px;
+      @include mq{
+        width: 100%;
+      }
+    }
+    .img{
+      width: 400px;
+      @include mq{
+        width: 100%;
+        padding: 8vw 0 0 0 ;
+      }
+    }
+  }
+  h2{
+    font-family: $mincho;
+    font-size: 5.0rem;
+    line-height: 1;
+    font-weight: 600;
+    @include mq{
+      font-size: 5.7rem;
+    }
+  }
+  .sub-catch{
+    font-family: $mincho;
+    font-size: 2rem;
+    padding:0.2em  0 1em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    @include mq{
+      padding:0.6em  0 1em;
+      letter-spacing: 0px;
+      font-size: 2.5rem;
+    }
+  }
+  .lead-txt{
+    font-size: 1.3rem;
+    font-family: $mincho;
+    font-weight: 600;
+  }
+  .service-box{
+    text-align: center;
+    h3{
+      color: $color1;
+      font-size: 2.1rem;
+      font-weight: 600;
+      padding: 3em 0 1.5em 0;
+      @include mq{
+        font-size: 1.8rem;
+        padding: 1.5em 0 1em 0;
+      }
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      @include mq{
+        flex-wrap: wrap;
+      }
+      li{
+        border-left: 1px solid $color1;
+        width: 25%;
+        text-align: center;
+        color: $color1;
+        font-size: 1.7rem;
+        @include mq{
+          border: 1px solid $color1;
+          box-sizing: border-box;
+          padding: 5vw 3vw;
+          border-radius: 5px;
+          width: 48%;
+          font-size: 1rem;
+          margin:0 0 4vw 0;
+        }
+        &:last-of-type{
+           border-right: 1px solid $color1;
+          @include mq{
+            border: 1px solid $color1;
+          }
+        }
+        p{
+          padding-top: 0.5em;
+        }
+        img{
+          width: 40%;
+          @include mq{
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+}
