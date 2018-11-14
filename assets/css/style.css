@@ -584,6 +584,10 @@ section.is-show .title1 {
   }
 }
 
+.depart {
+  font-size: 1.1rem !important;
+}
+
 header {
   background: #00579d;
   position: fixed;
