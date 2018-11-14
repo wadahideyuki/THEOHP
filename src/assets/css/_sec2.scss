@@ -6,7 +6,9 @@
   background-size: 100% auto;
   background-attachment: fixed;
   padding-bottom: 0px;
-
+  &.en{
+    display: none;
+  }
   @include mq {
     background-size: cover;
     background-attachment: scroll;

@@ -940,6 +940,10 @@ footer a {
   letter-spacing: 0.2em;
 }
 
+.main .sub-catch.en {
+  letter-spacing: 0;
+}
+
 @media screen and (max-width: 768px) {
   .main .sub-catch {
     padding: 0.6em  0 1em;
@@ -1113,6 +1117,10 @@ footer a {
   background-size: 100% auto;
   background-attachment: fixed;
   padding-bottom: 0px;
+}
+
+.sec2.en {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
