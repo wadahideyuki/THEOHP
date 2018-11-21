@@ -1,6 +1,7 @@
 .sec1{
   background: $color1;
   text-align: center;
+  border-bottom: 1px solid #FFF;
   .logobox{
     width: 100%;
     max-width: 466px;
@@ -49,6 +50,7 @@
       }
     }
   }
+  
   &.is-show{
     .logobox{
       opacity: 1;

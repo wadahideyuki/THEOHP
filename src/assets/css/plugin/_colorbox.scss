@@ -20,7 +20,7 @@
     The following rules are ordered and tabbed in a way that represents the
     order/nesting of the generated HTML, so that the structure easier to understand.
 */
-#cbox2Overlay{background:rgba(0,0,0,1)  url(//deagostini.jp/site/common/overlay.png) 0 0 repeat;}
+#cbox2Overlay{background:rgba(0,0,0,1)  url(overlay.png) 0 0 repeat;}
 #colorbox{}
     #cbox2TopLeft{width:21px; height:21px; background:none -100px 0 no-repeat;}
     #cbox2TopRight{width:21px; height:21px; background:none -129px 0 no-repeat;}
@@ -49,8 +49,8 @@ text-shadow: 1px 1px 3px #000;
         #cbox2Previous.hover{}
         #cbox2Next{right:10px;transform: rotate(45deg);}
         #cbox2Next.hover{}
-        #cbox2LoadingOverlay{background:url(//deagostini.jp/site/common/loading_background.png) center center no-repeat;}
-        #cbox2LoadingGraphic{background:url(//deagostini.jp/site/common/loading.gif) center center no-repeat;}
+        #cbox2LoadingOverlay{background:url(loading_background.png) center center no-repeat;}
+        #cbox2LoadingGraphic{background:url(loading.gif) center center no-repeat;}
         #cbox2Close{
 		position:absolute;
 		bottom: 11px;
